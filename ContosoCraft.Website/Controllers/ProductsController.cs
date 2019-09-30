@@ -26,5 +26,13 @@ namespace ContosoCraft.Website.Controllers
         {
             return _productsService.GetProducts();
         }
+
+        [HttpPut]
+        public ActionResult Post(string productId, int rating)
+        {
+            _productsService.AddRating(productId, rating);
+
+            return Ok();
+        }
     }
 }
