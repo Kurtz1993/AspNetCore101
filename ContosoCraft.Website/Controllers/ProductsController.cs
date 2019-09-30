@@ -27,8 +27,10 @@ namespace ContosoCraft.Website.Controllers
             return _productsService.GetProducts();
         }
 
-        [HttpPut]
-        public ActionResult Post(string productId, int rating)
+        [HttpGet("rate")]
+        public ActionResult Post(
+            [FromQuery] string productId,
+            [FromQuery] int rating)
         {
             _productsService.AddRating(productId, rating);
 
