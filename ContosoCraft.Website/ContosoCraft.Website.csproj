@@ -13,6 +13,7 @@
     <Folder Include="wwwroot\data\" />
     <Folder Include="Services\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Components\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\HomeController.cs" />
